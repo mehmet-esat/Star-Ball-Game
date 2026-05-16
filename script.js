@@ -1,3 +1,8 @@
+const socket = io(); // Sunucuya bağlan
+
+socket.on('connect', () => {
+    console.log("Sunucuya başarıyla bağlandım! Benim ID numaram:", socket.id);
+});
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
